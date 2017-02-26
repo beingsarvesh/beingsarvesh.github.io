@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Facebook AJAX Request </title>
+<meta name="viewport" content= "width= device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="styles-fb.css" rel="stylesheet">
+
+</head>
+<body>
+<h1 id="heading"> Getting data from a Facebook API. <small id="subheading">Through AJAX request</small></h1>
+<br>
+<div class="text-center">
+<button class="btn btn-warning " id="btn" type = "button">Click me to load data</button>
+</div>
+<br>
+
+  <!-- Trigger the modal with a button -->
+
+<div class="text-center">
+<button type="button" class="btn btn-warning" id="feed-btn">Click me to load feed</button>
+
+</div>
+
+
+<section>
+       	  <div class="well container" style="margin-top: 15px;">
+       	     <div class="container">
+       	     	<h3 class="text-center">Fetching profile info using Facebook Graph API</h3>
+       	     	<h4 class="text-center"> (Using jQuery and AJAX) </h4>
+
+
+       	     	    <hr>
+       	     	    <div class="text-center" style="padding-top: 3px;">
+       	     	      <h3>First name <h4 id="first_name" style="color: #26a69a"></h4></h3>
+       	     	    </div>  
+       	     	    
+       	     	    <hr>
+       	     	    <div class="text-center" style="padding-top: 3px;">
+       	     	      <h3>Last name <h4 id="last_name" style="color: #26a69a"></h4></h3>
+       	     	    </div> 
+
+       	     	     <hr>
+       	     	    <div class="text-center" style="padding-top: 3px;">
+       	     	      <h3>Email<h4 id="email" style="color: #26a69a"></h4></h3>
+       	     	    </div>  
+
+       	     	     <hr>
+       	     	    <div class="text-center" style="padding-top: 3px;">
+       	     	      <h3>Birthday<h4 id="birthday" style="color: #26a69a"></h4></h3>
+       	     	    </div> 
+
+       	     	     <hr>
+       	     	    <div class="text-center" style="padding-top: 3px;">
+       	     	      <h3>Hometown<h4 id="hometown" style="color: #26a69a"></h4></h3>
+       	     	    </div> 
+
+       	     	     <hr>
+       	     	    <div class="text-center" style="padding-top: 3px;">
+       	     	      <h3>Languages known<h4 id="languages" style="color: #26a69a"></h4></h3>
+       	     	    </div>
+
+       	     	     <hr>
+       	     	    <div class="text-center" style="padding-top: 3px;">
+       	     	      <h3>Profile ID<h4 id="id" style="color: #26a69a"></h4></h3>
+       	     	    </div>
+                    
+                    <hr>
+       	     	    <div class="text-center" style="padding-top: 3px;">
+       	     	      <h3>Profile Link<h4 id="link" style="color: #26a69a"></h4></h3>
+       	     	    </div>
+
+       	     	    
+       	     	    <hr>
+       	       
+       	     	    
+       	     </div><!-- end container -->
+
+
+       	  </div> <!-- end well -->
+
+       </section><!-- call to action ends -->
+
+                    
+<div class="container feed">
+           <section>
+                <div class="page-header" id="">
+                    <h2>News Feed. <small>Engaging with Facebook.</small></h2>
+                </div> <!-- end page header -->
+           </section>
+
+           <div class="panel-group" id="accordion">
+               
+               <div class="panel panel-default">
+                   <div class="panel-heading">
+                       <div class="panel-title">
+                           <a   data-toggle="collapse" data-target="#collapse-1">
+                           	Status 1
+                           </a>
+                       </div><!-- end panel title -->
+                       <div id="collapse-1" class="panel-collapse collapse">
+                            
+                       </div>
+                   </div><!-- end pamel heading -->
+               </div> <!-- end panel default -->
+
+                  <div class="panel panel-default">
+                   <div class="panel-heading">
+                       <div class="panel-title">
+                           <a data-toggle="collapse" data-target="#collapse-2">
+                           	Status 2
+                           </a>
+                       </div><!-- end panel title -->
+                       <div id="collapse-2" class="panel-collapse collapse">
+                            
+                       </div>
+                   </div><!-- end pamel heading -->
+               </div> <!-- end panel default -->
+               		
+
+                  <div class="panel panel-default">
+                   <div class="panel-heading">
+                       <div class="panel-title">
+                           <a  data-toggle="collapse" data-target="#collapse-3">
+                           	Status 3
+                           </a>
+                       </div><!-- end panel title -->
+                       <div id="collapse-3" class="panel-collapse collapse">
+                            
+                       </div>
+                   </div><!-- end pamel heading -->
+               </div> <!-- end panel default -->
+           </div><!-- end panel group -->
+
+
+       </div> <!--end container --> <!-- FAQ ends-->
+    
+      
+ 
+ 
+
+ 
+       	     	    
+       	     	   
+
+
+
+
+
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
+<script src="app-api.js"></script>
+</body>
+</html>
